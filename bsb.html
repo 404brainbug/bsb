@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Политехнический музей — презентация</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--glass: rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial;margin:0;background:linear-gradient(180deg,#071026 0%, #0f1724 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:1000px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:72px;height:72px;background:var(--glass);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:6px 0 18px}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:24px;align-items:start}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .stats{display:flex;gap:12px;flex-wrap:wrap}
+    .stat{flex:1 1 140px;padding:12px;background:rgba(255,255,255,0.02);border-radius:10px;text-align:center}
+
+    .section{margin-top:22px}
+    h2{margin:0 0 12px}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px;background:#0a0a0a}
+
+    footer{margin-top:30px;text-align:center;color:var(--muted);font-size:14px}
+
+    @media (max-width:880px){.hero{grid-template-columns:1fr}.logo{width:56px;height:56px}}
+
+    .btn{display:inline-block;padding:8px 12px;border-radius:9px;background:linear-gradient(90deg,var(--accent),#3b82f6);color:#08202a;text-decoration:none;font-weight:600}
+    .info-row{display:flex;align-items:center;gap:10px}
+    .muted{color:var(--muted)}
+    .caption{font-size:13px;color:var(--muted);margin-top:6px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header data-aos="fade-down">
+      <div class="logo">PM</div>
+      <div>
+        <h1>Политехнический музей — краткая презентация</h1>
+      </div>
+    </header>
+
+    <section class="hero" style="margin-top:18px">
+      <div class="card" data-aos="fade-right">
+        <h2>О музее</h2>
+        <p>Политехнический музей — один из старейших музеев науки и техники в России. Его коллекция содержит уникальные экспонаты — от прединдустриальных механизмов до советских компьютеров и редких электронных инструментов.</p>
+
+        <div class="section">
+          <h3>Ключевые факты</h3>
+          <div class="stats">
+            <div class="stat">
+              <div style="font-weight:700;font-size:18px">1872</div>
+              <div class="muted">год основания</div>
+            </div>
+            <div class="stat">
+              <div style="font-weight:700;font-size:18px">~160k+</div>
+              <div class="muted">экспонатов</div>
+            </div>
+            <div class="stat">
+              <div style="font-weight:700;font-size:18px">Москва</div>
+              <div class="muted">расположение</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Что показать на уроке</h3>
+          <ul>
+            <li>Краткая история создания и архитектуры здания.</li>
+            <li>Терменвокс, ранние компьютеры, промышленные машины XIX–XX вв.</li>
+            <li>Роль музея в популяризации науки.</li>
+          </ul>
+        </div>
+      </div>
+
+      <aside class="card" data-aos="fade-left">
+        <h2>Справочная</h2>
+
+        <div class="section info-row">
+          <div>
+            <strong>Адрес:</strong>
+            <div class="muted">г. Москва, Новая площадь, д. 3/4</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Советы для презентации</h3>
+          <ol>
+            <li>Начни с истории основания.</li>
+            <li>Покажи 3–4 ключевых экспоната.</li>
+            <li>Заверши образовательными проектами музея.</li>
+          </ol>
+          <div style="margin-top:10px"><a class="btn" href="#gallery">Открыть галерею</a></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card section" id="gallery" data-aos="zoom-in">
+  <h2>Галерея</h2>
+  <div class="grid gallery" style="margin-top:12px">
+    <figure>
+      <img src="https://prod-api.polymus.ru/upload/medialibrary/c99/w37uwmhpuj5rwlb2v8lu1jx0gafhjgo1/Novgorod_3700kh1152.jpg" alt="Фасад Политехнического музея" />
+      <figcaption class="caption">Фасад исторического здания</figcaption>
+    </figure>
+    <figure>
+      <img src="https://cvsmuseum.ru/assets/img/car/car_01.JPG" alt="Интерьер, экспонат" />
+      <figcaption class="caption">Зал с машинами XIX в.</figcaption>
+    </figure>
+    <figure>
+      <img src="https://red-innovations.su/index/photos_c/vtc/dscn8990.jpg" alt="Ранний компьютер" />
+      <figcaption class="caption">Ранний советский компьютер</figcaption>
+    </figure>
+    <figure>
+      <img src="https://pop-music.ru/upload/medialibrary/3c1/eq8ibe28lvv80h7d718pd3kuooz4cit4.jpeg" alt="Терменвокс" />
+      <figcaption class="caption">Терменвокс — ранний электронный инструмент</figcaption>
+    </figure>
+    <figure>
+      <img src="https://polymus.ru/upload/iblock/41d/788nych6h2yrnxi0tpbaaw90kzbub93j/Mashina-upravlyayushchaya-elektronnaya-tsifrovaya-UM_1-10.jpg" alt="УМ-1НХ" />
+      <figcaption class="caption">Малогабаритная управляющая ЭВМ УМ‑1НХ</figcaption>
+    </figure>
+    <figure>
+      <img src="https://prod-api.polymus.ru/upload/iblock/7ee/t33kns2q2k4tdbn6h2w7r32i30wokdr4/Fragment-tiglya-00.jpg" alt="Тигль" />
+      <figcaption class="caption">Осколки тигля для плавки металлов</figcaption>
+    </figure>
+    <figure>
+      <img src="https://prod-api.polymus.ru/upload/iblock/112/x54by67uyi66709dxsgq4qww39q1jyz8/01-Robot-dlya-izgotovleniya-sinteticheskikh-almazov.jpg" alt="Робот" />
+      <figcaption class="caption">Установка для изготовления синтетических алмазов</figcaption>
+    </figure>
+    <figure>
+      <img src="https://prod-api.polymus.ru/upload/iblock/381/ntju3k27ms0w1v429lg323gjjugca2wz/Pishushchaya-mashina-Odell-05.jpg" alt="Пишущая машина Odell" />
+      <figcaption class="caption">Пишущая машина Odell</figcaption>
+    </figure>
+    <figure>
+      <img src="https://prod-api.polymus.ru/upload/iblock/44f/c9h9i2wf1ycekdwrokkw433643qr7ed0/oblozhka.png" alt="Хлебозавод" />
+      <figcaption class="caption">Первый автоматизированный хлебозавод</figcaption>
+    </figure>
+    <figure>
+      <img src="https://prod-api.polymus.ru/upload/iblock/ffd/ir2a1id6gll79id2dsizpyma1eqx98s5/BESM_2160x1216.jpeg" alt="БЭСМ" />
+      <figcaption class="caption">Первый отечественный суперкомпьютер БЭСМ</figcaption>
+    </figure>
+    <figure>
+      <img src="https://prod-api.polymus.ru/upload/iblock/024/usq4kuurovhl7io152emoknaj1l0dywa/2_OKP_21_37929_10.jpg" alt="Урал‑1" />
+      <figcaption class="caption">Малая вычислительная машина «Урал‑1»</figcaption>
+    </figure>
+    <figure>
+      <img src="https://prod-api.polymus.ru/upload/iblock/162/52m77h7hhtj7pvvwrah028sxzs4xemte/OKP_3_10177.jpg" alt="Phänomobil" />
+      <figcaption class="caption">Автомобиль Phänomobil</figcaption>
+    </figure>
+  </div>
+</section>
+
+    <section class="card section" data-aos="fade-up">
+      <h2>Полезные ссылки и источники</h2>
+      <p class="muted">Материалы для подготовки:</p>
+      <ul>
+        <li>Официальный сайт: <code>https://polymus.ru/</code></li>
+        <li>Коллекции и мероприятия</li>
+      </ul>
+    </section>
+
+    <footer data-aos="fade-up">Сделано для школьной презентации. Автор: Т. Сардор. Спонсор: А. Нозим.</footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({duration:800,easing:'ease-out-cubic',once:true});
+  </script>
+</body>
+</html>
